@@ -1,0 +1,29 @@
+{
+	"apiVersion": 2,
+	"name": "ryelle/grainy-gradient",
+	"version": "1.0.0",
+	"title": "Grainy Gradient",
+	"category": "design",
+	"description": "A spacer with a textured gradient background.",
+	"keywords": [ "noise" ],
+	"attributes": {
+		"gradient": {
+			"type": "string"
+		},
+		"height": {
+			"type": "number",
+			"default": 100
+		}
+	},
+	"supports": {
+		"align": [ "wide", "full" ],
+		"html": false,
+		"spacing": {
+			"margin": true,
+			"padding": false
+		}
+	},
+	"textdomain": "grainy-gradient",
+	"editorScript": "file:./build/index.js",
+	"style": "file:./build/style-index.css"
+}
