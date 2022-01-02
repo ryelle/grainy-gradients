@@ -14,7 +14,7 @@ import {
 	UnitControl,
 	/* eslint-enable import/named */
 } from '@wordpress/components';
-import { useState } from '@wordpress/element';
+import { useState, useMemo } from '@wordpress/element';
 import { useDispatch } from '@wordpress/data';
 
 // Non-experimental as of Gutenberg plugin v11.1.0, experimental in WP 5.8.2.
@@ -30,13 +30,17 @@ if ( ! UnitControl ) {
 /**
  * Internal dependencies
  */
-import { DEFAULT_GRADIENT } from './utils';
+import { DEFAULT_GRADIENT, DEFAULT_TYPE, getTexture } from './utils';
 
 const MIN_HEIGHT = 1;
-const MAX_HEIGHT = 500;
+const MAX_HEIGHT = 800;
 
 export default function ( { attributes, isSelected, setAttributes } ) {
-	const { height, gradient = DEFAULT_GRADIENT } = attributes;
+	const {
+		height,
+		type = DEFAULT_TYPE,
+		gradient = DEFAULT_GRADIENT,
+	} = attributes;
 	const [ isResizing, setIsResizing ] = useState( false );
 	const { toggleSelection } = useDispatch( blockEditorStore );
 
@@ -64,7 +68,12 @@ export default function ( { attributes, isSelected, setAttributes } ) {
 		} );
 	};
 
-	const blockProps = useBlockProps();
+	const texture = useMemo( () => getTexture( attributes ), [ height, type ] );
+	const blockProps = useBlockProps( {
+		style: {
+			'--texture': texture,
+		},
+	} );
 
 	return (
 		<>

@@ -13,6 +13,10 @@
 		"height": {
 			"type": "number",
 			"default": 100
+		},
+		"type": {
+			"type": "string",
+			"enum": [ "default", "horizontal", "vertical", "blob" ]
 		}
 	},
 	"supports": {
