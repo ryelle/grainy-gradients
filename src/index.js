@@ -74,4 +74,10 @@ registerBlockType( 'ryelle/grainy-gradient', {
 				blockAttributes.type === variationAttributes.type,
 		},
 	],
+	example: {
+		attributes: {
+			gradient: DEFAULT_GRADIENT,
+			height: 250
+		},
+	},
 } );

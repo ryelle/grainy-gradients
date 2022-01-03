@@ -1,5 +1,5 @@
 export const DEFAULT_GRADIENT =
-	'linear-gradient(315deg, rgba(6, 147, 227, 1) 0%, white 100%)';
+	'linear-gradient(180deg,rgb(94,7,227) 0%,rgb(255,255,255) 100%)';
 
 export const DEFAULT_TYPE = 'default';
 
