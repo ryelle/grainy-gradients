@@ -39,7 +39,7 @@ registerBlockType( 'ryelle/grainy-gradient', {
 	variations: [
 		{
 			name: 'default',
-			title: __( 'Default Grain', 'grainy-gradient' ),
+			title: __( 'Default Grain', 'grainy-gradient-block' ),
 			isDefault: true,
 			attributes: { type: DEFAULT_TYPE },
 			scope: [ 'transform' ],
@@ -48,7 +48,7 @@ registerBlockType( 'ryelle/grainy-gradient', {
 		},
 		{
 			name: 'horizontal',
-			title: __( 'Horizontal Grain', 'grainy-gradient' ),
+			title: __( 'Horizontal Grain', 'grainy-gradient-block' ),
 			icon: iconHorizontal,
 			attributes: { type: 'horizontal' },
 			scope: [ 'transform' ],
@@ -57,7 +57,7 @@ registerBlockType( 'ryelle/grainy-gradient', {
 		},
 		{
 			name: 'vertical',
-			title: __( 'Vertical Grain', 'grainy-gradient' ),
+			title: __( 'Vertical Grain', 'grainy-gradient-block' ),
 			icon: iconVertical,
 			attributes: { type: 'vertical' },
 			scope: [ 'transform' ],
@@ -67,7 +67,7 @@ registerBlockType( 'ryelle/grainy-gradient', {
 		{
 			name: 'blob',
 			icon: iconBlob,
-			title: __( 'Blobby Grain', 'grainy-gradient' ),
+			title: __( 'Blobby Grain', 'grainy-gradient-block' ),
 			attributes: { type: 'blob' },
 			scope: [ 'transform' ],
 			isActive: ( blockAttributes, variationAttributes ) =>

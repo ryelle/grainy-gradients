@@ -26,7 +26,7 @@
 			"padding": false
 		}
 	},
-	"textdomain": "grainy-gradient",
+	"textdomain": "grainy-gradient-block",
 	"editorScript": "file:./build/index.js",
 	"style": "file:./build/style-index.css"
 }
