@@ -17,7 +17,7 @@ You can control the block's height, the gradient used, and the "grain type". The
 
 == Screenshots ==
 
-1. The default Grainy Gradient block, using the default grain.
+1. The default Grainy Gradient block, using the default grain variation.
 2. A Grainy Gradient block with the horizontal grain variation.
 3. A Grainy Gradient block with the vertical grain variation.
 4. A Grainy Gradient block with the blobby grain variation.
