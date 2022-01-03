@@ -15,6 +15,8 @@ Inspired by the [grainy gradient trend](https://css-tricks.com/grainy-gradients/
 
 You can control the block's height, the gradient used, and the "grain type". There are 4 variations of the block with different grain textures: a default noise texture, horizontal lines, vertical lines, and a large, blobby texture (which reminds me of a lava lamp).
 
+Head over to [the GitHub repo](https://github.com/ryelle/grainy-gradient) for the development version, or to suggest new features.
+
 == Screenshots ==
 
 1. The default Grainy Gradient block, using the default grain variation.
