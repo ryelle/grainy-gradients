@@ -8,13 +8,15 @@ import { useBlockProps } from '@wordpress/block-editor';
 /**
  * Internal dependencies
  */
-import Edit from './edit';
 import { DEFAULT_GRADIENT, DEFAULT_TYPE, getTexture } from './utils';
+import Edit from './edit';
+import { iconBlob, iconDefault, iconHorizontal, iconVertical } from './icons';
 import './style.scss';
 import settings from '../block.json';
 
 registerBlockType( 'ryelle/grainy-gradient', {
 	...settings,
+	icon: iconDefault,
 	edit: Edit,
 	save: ( { attributes } ) => {
 		const { height, gradient = DEFAULT_GRADIENT } = attributes;
@@ -47,6 +49,7 @@ registerBlockType( 'ryelle/grainy-gradient', {
 		{
 			name: 'horizontal',
 			title: __( 'Horizontal Grain', 'grainy-gradient' ),
+			icon: iconHorizontal,
 			attributes: { type: 'horizontal' },
 			scope: [ 'transform' ],
 			isActive: ( blockAttributes, variationAttributes ) =>
@@ -55,6 +58,7 @@ registerBlockType( 'ryelle/grainy-gradient', {
 		{
 			name: 'vertical',
 			title: __( 'Vertical Grain', 'grainy-gradient' ),
+			icon: iconVertical,
 			attributes: { type: 'vertical' },
 			scope: [ 'transform' ],
 			isActive: ( blockAttributes, variationAttributes ) =>
@@ -62,6 +66,7 @@ registerBlockType( 'ryelle/grainy-gradient', {
 		},
 		{
 			name: 'blob',
+			icon: iconBlob,
 			title: __( 'Blobby Grain', 'grainy-gradient' ),
 			attributes: { type: 'blob' },
 			scope: [ 'transform' ],
