@@ -19,7 +19,8 @@
 		"@wordpress/components": "19.1.6",
 		"@wordpress/data": "6.1.5",
 		"@wordpress/element": "4.0.4",
-		"@wordpress/i18n": "4.2.4"
+		"@wordpress/i18n": "4.2.4",
+		"@wordpress/primitives": "3.0.4"
 	},
 	"devDependencies": {
 		"@wordpress/eslint-plugin": "9.3.0",
