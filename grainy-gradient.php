@@ -5,7 +5,7 @@
  * Description: A gradient with a little noise to it, this spacer block will add visual interest to your posts and pages.
  * Requires at least: 5.8
  * Requires PHP: 7.0
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: ryelle
  * Author URI: https://ryelle.codes
  * License: GPL-2.0-or-later

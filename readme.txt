@@ -3,7 +3,7 @@ Contributors:      ryelle
 Tags:              block, gradient, spacer
 Requires at least: 5.8.0
 Tested up to:      5.9.0
-Stable tag:        1.0.0
+Stable tag:        1.0.1
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,6 +26,10 @@ Head over to [the GitHub repo](https://github.com/ryelle/grainy-gradient-block) 
 5. The block settings.
 
 == Changelog ==
+
+= 1.0.1 =
+
+Remove `package-lock.json` from the published plugin version. For development, use [the repository on GitHub](https://github.com/ryelle/grainy-gradient-block).
 
 = 1.0.0 =
 
