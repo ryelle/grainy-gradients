@@ -3,6 +3,7 @@
 /.wordpress-org
 /node_modules
 
+package-lock.json
 .distignore
 .editorconfig
 .gitignore
