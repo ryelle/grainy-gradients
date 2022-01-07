@@ -14,9 +14,9 @@
 		"packages-update": "wp-scripts packages-update"
 	},
 	"dependencies": {
-		"@wordpress/block-editor": "8.0.12",
+		"@wordpress/block-editor": "8.0.13",
 		"@wordpress/blocks": "11.1.5",
-		"@wordpress/components": "19.1.6",
+		"@wordpress/components": "19.2.0",
 		"@wordpress/data": "6.1.5",
 		"@wordpress/element": "4.0.4",
 		"@wordpress/i18n": "4.2.4",
